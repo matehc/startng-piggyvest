@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Piggyvest helps you save your money, why not register today. This is a replica though :-)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <title>PiggyVest | Dashboard</title>
+</head>
+<body>
+    <!-- Background Images -->
+    <img src="/img/top_left.png" class="backImages top_left" alt="top left backround image">
+    <img src="/img/top_right.png" class="backImages top_right" alt="top right backround image">
+    <img src="/img/bottom_left.png" class="backImages bottom_left" alt="bottom_left backround image">
+    <img src="img/bottom_right.png" class="backImages bottom_right" alt="bottom_right background image">
+    
+    <!-- Piggyvest Logo -->
+    <img src="/img/piggyvest-logo.0b78a8fa.svg" alt="piggyvest logo" id="piggyvest_logo" class="center">
+
+    <!-- SECTION ==> contains H2 heading, PARAGRAPH for tagline and FORM -->
+
+    <section class="bRadius center">
+        <h2>Create a Secure Account</h2>
+        <P class="tagline">Welcome to the future of Savings & Investments</P>
+
+        <form action="" method="post" class="center">
+            <!-- label and input for full name -->
+            <label for="regFName" class="fontLabel">Full Name</label>
+            <input type="text" name="fullname" id="regFName" class="regInput" placeholder="Full Name"><br>
+            <!-- label and input for email -->
+            <label for="regEmail" class="fontLabel">Email Address</label>
+            <input type="email" name="email" id="regEmail" class="regInput" placeholder="Email"><br>
+            <!-- label and input for phone number -->
+            <label for="phone" class="fontLabel">Phone Number</label>
+            <input type="text" name="phone" id="regPhone" class="regInput" placeholder="Phone Number"><br>
+            <!-- label and input for password -->
+            <label for="password" class="fontLabel">Password</label>
+            <input type="password" name="password" id="regPassword" class="regInput" placeholder="Password"><br>
+            <!-- label and input for  referre phone or promo code-->
+            <label for="referrer" class="fontLabel">Referrer Phone or Promo Code (Optional)</label>
+            <input type="text" name="referrer_promo" id="referrer" class="regInput" placeholder="Referrer Phone or Code"><br>
+            <!-- label and options for how did you hear about us -->
+            <div id="select_container">
+                <label class="fontLabel">How Did You Hear About Us? (Optional)</label>
+                <select id="selHDYHAU">
+                    <option value="default" name="how_Did_You_Hear_About_Us" class="options">Click To Select</option>
+                    <option value="facebook" name="how_Did_You_Hear_About_Us" class="options">Facebook</option>
+                    <option value="twitter" name="how_Did_You_Hear_About_Us" class="options">Twitter</option>
+                    <option value="instagram" name="how_Did_You_Hear_About_Us" class="options">Instagram</option>
+                    <option value="friend_family_coworker" name="how_Did_You_Hear_About_Us" class="options">Friend/Family/Coworker Referral</option>
+                    <option value="google_search" name="how_Did_You_Hear_About_Us" class="options">Google search</option>
+                    <option value="google_playstore" name="how_Did_You_Hear_About_Us" class="options">Google playstore</option>
+                    <option value="online_blog" name="how_Did_You_Hear_About_Us" class="options">Online Blog</option>
+                    <option value="local_newspaper" name="how_Did_You_Hear_About_Us" class="options">Local Newspaper</option>
+                    <option value="at_an_event" name="how_Did_You_Hear_About_Us" class="options">At an event</option>
+                    <option value="other" name="how_Did_You_Hear_About_Us" class="options">Other</option>
+                </select><br>
+            </div>
+            <!-- submit button -->
+            <button type="submit" class="bRadius">Create Account</button>
+            
+        </form>
+    </section>
+    <p class="login">Already have an accout?Log In</p>
+</body>
+</html>
