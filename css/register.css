@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+/* 
+======================
+MARGIN & PADDING RESET
+======================
+*/
 * {
     margin: 0;
     padding: 0;
@@ -35,66 +40,90 @@ BACKGROUND IMAGES
 }
 
 .bottom_left {
-    bottom: -30px;
-    left: -90px;
+    bottom: -40px;
+    left: -50px;
     height: 200px;
     width: 200px;
 }
 
 .bottom_right {
     bottom: -20px;
-    right: -20px;
+    right: -75px;
     height: 200px;
     width: 200px;
 }
 
-
+/* 
+==========================
+PIGGYVEST LOGO & CENTERING
+==========================
+*/
 #piggyvest_logo {
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
+#piggyvest_logo:hover {
+    cursor: pointer;
+}
+
+/* 
+================
+RE-USABLE STYLES
+================
+*/
 .center {
     margin-left: auto;
     margin-right: auto;
 }
 
-section {
+.bRadius {
+    border-radius: 10px 10px 10px 0;
+}
+
+/* 
+=================
+SECTION & HEADING
+=================
+*/
+
+#head_form_container {
     width: 33%;
     background-color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-form {
-    width: 80%;
-}
-
-section h2 {
+#heading {
     color: #083E9E;
     text-align: center;
     margin-top: 30px;
     font-weight: bolder;
 }
 
-.tagline {
+#tagline {
     text-align: center;
     margin-bottom: 20px;
     font-size: .85em;
     font-weight: 300;
 }
-.bRadius {
-    border-radius: 10px 10px 10px 0;
-}
-
 
 /* 
 ===============
 FORM STYLING
 ===============
 */
-.fontLabel {
+form {
+    width: 80%;
+}
+
+/* 
+=================
+Input styles
+=================
+*/
+.inputLabel {
     display: block;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -108,14 +137,7 @@ form input {
     width: 100%;
 }
 
-
-/* 
-=================
-Input styles
-=================
-*/
-
-.regInput, select {
+.regInput, #selHDYHAU {
     background-color: #EDF2F7;
     height: 50px;
     outline: none;
@@ -124,10 +146,11 @@ Input styles
     border-radius: 5px;
 }
 
-select {
+#selHDYHAU {
     margin-bottom: 15px;
     width: 100%;
     -webkit-appearance: none;
+    font-size: 17px;
 }
 
 #select_container {
@@ -157,13 +180,6 @@ select {
     color: gray;
 }
 
-#selHDYHAU {
-    -webkit-appearance: none;
-    font-size: 17px;
-    padding: 10px;
-    overflow: hidden;
-}
-
 button {
     width: 100%;
     height: 55px;
@@ -179,11 +195,17 @@ button {
 
 button:hover {
     background-color: #062863;
+    cursor: pointer;
 }
 
-.login {
+#login_text {
     text-align: center;
     color: #fff;
-    font-size: .7em;
-    margin-top: 20px;
+    font-size: .8em;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+#login_text:hover {
+    color: #B3AFB0;
 }

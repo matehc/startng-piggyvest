@@ -5,7 +5,7 @@
     <meta name="description" content="Piggyvest helps you save your money, why not register today. This is a replica though :-)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="/css/register.css">
     <title>PiggyVest | Dashboard</title>
 </head>
 <body>
@@ -16,33 +16,33 @@
     <img src="img/bottom_right.png" class="backImages bottom_right" alt="bottom_right background image">
     
     <!-- Piggyvest Logo -->
-    <img src="/img/piggyvest-logo.0b78a8fa.svg" alt="piggyvest logo" id="piggyvest_logo" class="center">
+    <a href="https://piggyvest.com"><img src="/img/piggyvest-logo.0b78a8fa.svg" alt="piggyvest logo" id="piggyvest_logo"  class="center"></a>
 
     <!-- SECTION ==> contains H2 heading, PARAGRAPH for tagline and FORM -->
 
-    <section class="bRadius center">
-        <h2>Create a Secure Account</h2>
-        <P class="tagline">Welcome to the future of Savings & Investments</P>
+    <section id="head_form_container" class="bRadius center">
+        <h2 id="heading">Create a Secure Account</h2>
+        <P id="tagline">Welcome to the future of Savings & Investments</P>
 
         <form action="" method="post" class="center">
             <!-- label and input for full name -->
-            <label for="regFName" class="fontLabel">Full Name</label>
+            <label for="regFName" class="inputLabel">Full Name</label>
             <input type="text" name="fullname" id="regFName" class="regInput" placeholder="Full Name"><br>
             <!-- label and input for email -->
-            <label for="regEmail" class="fontLabel">Email Address</label>
+            <label for="regEmail" class="inputLabel">Email Address</label>
             <input type="email" name="email" id="regEmail" class="regInput" placeholder="Email"><br>
             <!-- label and input for phone number -->
-            <label for="phone" class="fontLabel">Phone Number</label>
+            <label for="phone" class="inputLabel">Phone Number</label>
             <input type="text" name="phone" id="regPhone" class="regInput" placeholder="Phone Number"><br>
             <!-- label and input for password -->
-            <label for="password" class="fontLabel">Password</label>
+            <label for="password" class="inputLabel">Password</label>
             <input type="password" name="password" id="regPassword" class="regInput" placeholder="Password"><br>
             <!-- label and input for  referre phone or promo code-->
-            <label for="referrer" class="fontLabel">Referrer Phone or Promo Code (Optional)</label>
+            <label for="referrer" class="inputLabel">Referrer Phone or Promo Code (Optional)</label>
             <input type="text" name="referrer_promo" id="referrer" class="regInput" placeholder="Referrer Phone or Code"><br>
             <!-- label and options for how did you hear about us -->
             <div id="select_container">
-                <label class="fontLabel">How Did You Hear About Us? (Optional)</label>
+                <label class="inputLabel">How Did You Hear About Us? (Optional)</label>
                 <select id="selHDYHAU">
                     <option value="default" name="how_Did_You_Hear_About_Us" class="options">Click To Select</option>
                     <option value="facebook" name="how_Did_You_Hear_About_Us" class="options">Facebook</option>
@@ -62,6 +62,6 @@
             
         </form>
     </section>
-    <p class="login">Already have an accout?Log In</p>
+    <p id="login_text">Already have an accout? Log In</p>
 </body>
 </html>
