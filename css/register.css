@@ -26,22 +26,22 @@ BACKGROUND IMAGES
 }
 
 .top_left {
-    left: -10px;
-    top: -60px;
+    left: -10px; 
+    top: -60px; 
     height: 200px;
     width: 200px;
 }
 
 .top_right {
-    right: -100px;
+    right: -100px; 
     top: 1px;
     height: 200px;
     width: 200px;
 }
 
 .bottom_left {
-    bottom: -40px;
-    left: -50px;
+    bottom: -40px; 
+    left: -50px; 
     height: 200px;
     width: 200px;
 }
@@ -92,13 +92,13 @@ SECTION & HEADING
     width: 33%;
     background-color: #fff;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
 }
 
 #heading {
     color: #083E9E;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px; 
     font-weight: bolder;
 }
 
@@ -125,7 +125,7 @@ Input styles
 */
 .inputLabel {
     display: block;
-    margin-top: 20px;
+    margin-top: 20px; 
     margin-bottom: 5px;
     color: #4A5568;
 
@@ -208,4 +208,52 @@ button:hover {
 }
 #login_text:hover {
     color: #B3AFB0;
+}
+
+
+/* 
+===============
+Media Queries
+===============
+*/
+
+@media (min-width: 320px) {
+    #piggyvest_logo {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    #tagline {
+        font-size: .75em;
+        font-weight: 300;
+    }
+    /* 
+        Section Container
+    */
+    #head_form_container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .top_left {
+      display: none;
+    }
+    
+    .top_right {
+        right: -20px;
+        top: 0px;
+        height: 50px;
+        width: 50px;
+        z-index: -1;
+    }
+    
+    .bottom_left {
+        display: none;
+    }
+    
+    .bottom_right {
+        bottom: -20px;
+        right: -20px;
+        height: 50px;
+        width: 50px;
+    }
 }
