@@ -258,22 +258,116 @@ Media Queries
     }
 }
 
-@media (min-width: 544px) {
+
+@media (min-width: 320px) {
+    #piggyvest_logo {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    #tagline {
+        font-size: .75em;
+        font-weight: 300;
+    }
+    /* 
+        Section Container
+    */
     #head_form_container {
-        width: 85%;
+        width: 80%;
         margin: auto;
     }
 
-    /* .top_right {
-
-    } */
     .top_left {
-        display: inline;
+      display: none;
+    }
+    
+    .top_right {
+        right: -20px;
+        top: 0px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .bottom_left {
+        display: none;
+    }
+    
+    .bottom_right {
+        bottom: -20px;
+        right: -20px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width: 514px) {
+    #head_form_container {
+        width: 70%;
+    }
+    .top_right {
+        height: 80px;
+        width: 80px;
+        top: -1px;
+        right: -35px;
     }
     .bottom_left {
-        display: inline;
+        display: inherit;
+        height: 80px;
+        width: 80px;
+        left: -20px;
+        bottom: -60px;
     }
-    /* .bottom_right {
-
-    } */
+    .login_text {
+        font-size: 1.15em;
+    }
 } 
+
+@media (min-width: 575px) {
+    #head_form_container {
+        width: 65%;
+    }
+}
+
+@media (min-width: 612px) {
+    #head_form_container {
+        width: 60%;
+    }
+    .top_right {
+        width: 90px;
+        height: 90px;
+    }
+    .bottom_right {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 648px) {
+    #head_form_container {
+        width: 50%;
+    }
+    .top_left {
+        display: inherit;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 954px) {
+    #head_form_container {
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 959px) {
+    #head_form_container {
+        max-width: 33%;
+    }
+}
+
+
+
+
+
+
+
+
